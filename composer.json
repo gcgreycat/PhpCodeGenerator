@@ -1,0 +1,25 @@
+{
+    "name": "gcgreycat/phpcodegenerator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "gcgreycat\\PhpCodeGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "gcgreycat\\PhpCodeGenerator\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kirill Mikhailov"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
