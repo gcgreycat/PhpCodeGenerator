@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 class RawTest extends TestCase
 {
 
-    public function test__construct()
+    public function test__construct(): void
     {
         $content = <<<'TEXT'
 $foo = 'bar';

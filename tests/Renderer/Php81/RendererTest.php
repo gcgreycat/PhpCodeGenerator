@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 class RendererTest extends TestCase
 {
 
-    public function testRender()
+    public function testRender(): void
     {
         $renderer = new Renderer();
 
@@ -26,7 +26,7 @@ EXPECTED;
         $this->assertEquals($expected, $renderer->render($raw));
     }
 
-    public function testRenderInvalidComponent()
+    public function testRenderInvalidComponent(): void
     {
         $renderer = new Renderer();
         $component = $this->createStub(IComponent::class);

@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 class RawTest extends TestCase
 {
-    public function testRender()
+    public function testRender(): void
     {
         $renderer = $this->createStub(IRenderer::class);
         $raw = new Raw($renderer);
