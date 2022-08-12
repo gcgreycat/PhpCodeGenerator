@@ -8,7 +8,7 @@ class Condition implements IComponent
     private array $statements = [];
     private array $elseStatements = [];
 
-    public function __construct(IComponent $component, ?string $expression = null)
+    public function __construct(IComponent $component, string $expression)
     {
         $this->addCondition($component, $expression);
     }
