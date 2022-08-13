@@ -26,13 +26,11 @@ class Func extends AbstractComponent
         return $result;
     }
 
-    private function drawArguments(Components\IComponent $component): string
+    private function drawArguments(Components\Func $component): string
     {
         $list = [];
-        if (!empty($component->arguments)) {
-            foreach ($component->arguments as $argument) {
-                $list[] = ($argument->type ? $argument->type . ' ' : '') . '$' . $argument->name;
-            }
+        foreach ($component->arguments as $argument) {
+            $list[] = ($argument->type ? $argument->type . ' ' : '') . '$' . $argument->name;
         }
         return '(' . join(', ', $list) . ')';
     }

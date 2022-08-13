@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace gcgreycat\PhpCodeGenerator\Components\Func;
+namespace gcgreycat\PhpCodeGenerator\Components\ClassComponent;
 
 use gcgreycat\PhpCodeGenerator\AbstractClassList;
 
-class ArgumentList extends AbstractClassList
+class PropertyList extends AbstractClassList
 {
-    public function current(): ?Argument
+    public function current(): ?Property
     {
         return current($this->list);
     }
 
     protected function getClass(): string
     {
-        return Argument::class;
+        return Property::class;
     }
 }

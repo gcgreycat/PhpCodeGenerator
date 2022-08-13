@@ -8,10 +8,10 @@ use gcgreycat\PhpCodeGenerator\Components\Func\ArgumentList;
 class Func implements IComponent
 {
     public function __construct(
-        public readonly IComponent    $component,
-        public readonly ?string       $name = null,
-        public readonly ?ArgumentList $arguments = null,
-        public readonly ?string       $returnType = null
+        public readonly IComponent   $component,
+        public readonly ?string      $name = null,
+        public readonly ArgumentList $arguments = new ArgumentList(),
+        public readonly ?string      $returnType = null
     )
     {
     }
